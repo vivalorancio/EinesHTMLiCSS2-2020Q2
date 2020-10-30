@@ -1,0 +1,22 @@
+@use "sass:color";
+
+/* ------------------------------------ *\
+  #FONT FAMILY
+\* ------------------------------------ */
+
+$font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Merriweather Sans",
+  "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+  "Segoe UI Emoji", "Segoe UI Symbol";
+$font-family-serif: "Merriweather", "Georgia", "Times New Roman", serif;
+
+/* ------------------------------------ *\
+   #COLORS
+\* ------------------------------------ */
+
+$light-color: #f5f6f5;
+$dark-color: #374d61;
+$main-color: #9eacb7;
+$main-color-light: color.scale($main-color, $lightness: 60%);
+$accent-color: #e5375a;
+$accent-color-darker: color.scale($accent-color, $lightness: -30%);
+$accent-color-lighter: color.scale($accent-color, $lightness: 30%);

@@ -1,0 +1,122 @@
+/* ------------------------------------ *\
+   #GLOBAL
+\* ------------------------------------ */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: $font-family-sans-serif;
+  background-color: $light-color;
+  color: $dark-color;
+}
+
+a {
+  color: $accent-color;
+}
+
+a:hover {
+  color: $accent-color-lighter;
+  text-decoration: none;
+}
+
+a:visited {
+  color: $accent-color-lighter;
+}
+
+/* ------------------------------------ *\
+   #HEADER
+\* ------------------------------------ */
+
+.header {
+  margin: 0 auto;
+  padding: 20px 0 10px;
+  text-align: center;
+  background-color: $main-color;
+  color: $light-color;
+}
+
+.header__title {
+  margin: 0;
+  padding: 0;
+  font-family: $font-family-serif;
+  font-size: 2em;
+}
+
+.header__subtitle {
+  margin: 0;
+  padding: 0;
+  color: $dark-color;
+  text-transform: uppercase;
+  font-size: 0.9em;
+  letter-spacing: 0.15em;
+}
+
+/* ------------------------------------ *\
+   #SECTION
+\* ------------------------------------ */
+
+.section {
+  max-width: 960px;
+  margin: 20px 15px;
+  padding: 0 0 0 10px;
+  border-left: 3px solid $main-color-light;
+}
+
+.section__title {
+  font-family: $font-family-serif;
+  font-size: 1.2em;
+}
+
+.section__list {
+  @include reset-list;
+  font-size: 0.9em;
+}
+
+.section__listitemcaption {
+  font-weight: bold;
+}
+
+.section__listitem--emphasis {
+  font-style: italic;
+}
+
+/* ------------------------------------ *\
+   #MEDIA QUERIES
+\* ------------------------------------ */
+
+@media (min-width: 768px) {
+  /* ------------------------------------ *\
+   #HEADER
+\* ------------------------------------ */
+
+  .header {
+    padding: 50px 0 40px;
+  }
+
+  .header__title {
+    font-size: 2.5em;
+  }
+
+  .header__subtitle {
+    font-size: 1em;
+    letter-spacing: 0.25em;
+  }
+
+  /* ------------------------------------ *\
+   #SECTION
+\* ------------------------------------ */
+
+  .section {
+    margin: 30px auto;
+    padding: 0 0 0 15px;
+    border-left: 5px solid $main-color-light;
+  }
+
+  .section__title {
+    font-size: 1.3em;
+  }
+
+  .section__list {
+    font-size: 1em;
+  }
+}
